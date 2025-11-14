@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #f7f7fb;
+  color: #0f172a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #fff, #eef2ff 45%, #e2e8f0);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+p {
+  margin: 0;
+  color: #1f2937;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.hero {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.hero-content {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.tag {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #6366f1, #8b5cf6);
+  color: #fff;
+}
+
+.hero-card {
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 35px rgba(37, 99, 235, 0.15);
+}
+
+.hero-card ul {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section-header {
+  max-width: 720px;
+  margin-bottom: 2rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.75rem;
+}
+
+.principles-grid,
+.metrics-grid,
+.cadence-grid,
+.failsafe-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.principle-card,
+.metric-card,
+.cadence-card,
+.failsafe-grid article {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.metric-card h3,
+.principle-card h3,
+.cadence-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.metric-target {
+  font-weight: 600;
+  color: #1d4ed8;
+  margin-bottom: 0.75rem;
+}
+
+.cadence-card ul {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.phases-stack {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.phase-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(226, 232, 240, 0.6)
+  );
+  border-radius: 1.75rem;
+  padding: 2.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+  backdrop-filter: blur(10px);
+}
+
+.phase-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #475569;
+  margin-bottom: 1rem;
+}
+
+.phase-id {
+  font-weight: 600;
+}
+
+.phase-timeframe {
+  background: rgba(79, 70, 229, 0.1);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.phase-narrative {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+  font-size: 1.05rem;
+}
+
+.phase-stats {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.phase-stats li {
+  background: rgba(59, 130, 246, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 0.85rem;
+  font-size: 0.95rem;
+}
+
+.phase-stats strong {
+  color: #1d4ed8;
+}
+
+.initiatives h4,
+.risk-controls h4 {
+  margin-bottom: 1rem;
+}
+
+.initiative-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.initiative-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  display: grid;
+  gap: 1rem;
+}
+
+.initiative-card h5 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.initiative-objective {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.validation,
+.compounding {
+  background: rgba(226, 232, 240, 0.35);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.risk-controls ul {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.failsafe-grid h3 {
+  margin-bottom: 0.75rem;
+}
+
+.failsafe-grid ul {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.footer {
+  margin-top: 5rem;
+  text-align: center;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 3rem 1.25rem 4rem;
+  }
+
+  .hero-content,
+  .hero-card,
+  .phase-card {
+    padding: 2rem;
+  }
+
+  .principle-card,
+  .metric-card,
+  .cadence-card {
+    padding: 1.5rem;
+  }
+}
